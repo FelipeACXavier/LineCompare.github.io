@@ -1,0 +1,160 @@
+:root {
+  --text-color: black;
+  --header-color: #C0BFC0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #F5F5F5;
+}
+
+.header {
+  width: 100%;
+  height: fit-content;
+  text-align: left;
+  background-color: var(--header-color);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.title {
+  color: var(--text-color);
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.title h1 {
+  padding-top: 0;
+  font-weight: bolder;
+  margin: 5px auto;
+  font-style: italic;
+}
+
+.inputs {
+  width: 100%;
+  margin: 20px auto 5px auto;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.input-containers {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
+.push-right {
+  float: right !important;
+}
+
+.push-left {
+  float: left !important;
+}
+
+.file-input {
+  display: table-cell;
+  width: fit-content;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.feedback-container {
+  display: table;
+  height: 30px;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.feedback-text {
+  font-style: italic;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.feedback {
+  display: table-cell;
+  width: 100%;
+  text-align: left;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.button-container {
+  margin: 10px auto 0 auto;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  width: 100px;
+  margin: 0;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+  background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#file1 {
+  display: none;
+}
+
+#compare {
+  display: none;
+}
+
+.output-container {
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  max-height: 20%;
+}
+
+.output-container h3 {
+  padding-top: 0;
+  margin: 5px auto;
+  color: var(--text-color);
+}
+
+.output {
+  overflow: auto;
+  padding: 0 10px;
+  height: 50vh;
+  border-radius: 5px;
+  border: 2px solid var(--header-color);
+  color: var(--text-color);
+}
+
+*::-webkit-scrollbar {
+  background-color: var(#161618);
+  width: 6px;
+  height: 6px;
+  margin: 0 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(#161618) !important;
+}
+
+*::-webkit-scrollbar-thumb {
+  max-height: 20px !important;
+  border-radius: 16px;
+  background-color: #babac0;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}

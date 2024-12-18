@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Line Comparator</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header" class="header">
+        <div class="title">
+          <h1>Compare lines in two files</h1>
+        </div>
+      </div>
+      <div id="inputs" class="inputs">
+        <div id="input-containers" class="input-containers">
+          <div id="file1-input" class="file-input push-left">
+            <label for="file1" class="button">Select files</label>
+            <input type="file" id="file1" onchange="filesSelected()" multiple/>
+          </div>
+          <div class="feedback-container">
+            <div id="files" class="feedback">
+
+            </div>
+          </div>
+          <!-- <div id="file2-input" class="file-input push-right">
+            <label for="compare" class="button">Compare</label>
+            <button id="compare" onclick="compareFiles()"></button>
+          </div> -->
+        </div>
+      </div>
+      <div id="output-container" class="output-container">
+        <h3>Changed lines</h3>
+        <pre id="output" class="output"></pre>
+      </div>
+    </div>
+    <div id="footer">
+
+    </div>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
