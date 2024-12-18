@@ -7,6 +7,9 @@ body {
   padding: 0;
   margin: 0;
   background-color: #F5F5F5;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 
 .header {
@@ -138,8 +141,25 @@ body {
   color: var(--text-color);
 }
 
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: fit-content;
+  background-color: var(--header-color);
+}
+
+.footer-text {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.better-text {
+  font-style: italic;
+}
+
 *::-webkit-scrollbar {
-  background-color: var(#161618);
   width: 6px;
   height: 6px;
   margin: 0 2px;

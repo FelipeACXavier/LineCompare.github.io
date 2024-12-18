@@ -10,7 +10,7 @@
     <div id="main">
       <div id="header" class="header">
         <div class="title">
-          <h1>Compare lines in two files</h1>
+          <h1>Line Comparator</h1>
         </div>
       </div>
       <div id="inputs" class="inputs">
@@ -20,14 +20,8 @@
             <input type="file" id="file1" onchange="filesSelected()" multiple/>
           </div>
           <div class="feedback-container">
-            <div id="files" class="feedback">
-
-            </div>
+            <div id="files" class="feedback"></div>
           </div>
-          <!-- <div id="file2-input" class="file-input push-right">
-            <label for="compare" class="button">Compare</label>
-            <button id="compare" onclick="compareFiles()"></button>
-          </div> -->
         </div>
       </div>
       <div id="output-container" class="output-container">
@@ -35,8 +29,11 @@
         <pre id="output" class="output"></pre>
       </div>
     </div>
-    <div id="footer">
-
+    <div id="footer" class="footer">
+      <div class="footer-text">
+        <a href="https://github.com/FelipeACXavier" class="better-text">GitHub</a>
+         - Note: This is a very small untested project. If there are any doubts, feel free to contact me.
+      </div>
     </div>
     <script src="assets/index.js"></script>
   </body>
